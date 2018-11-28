@@ -1,13 +1,13 @@
-class Chick implements Animal {     
+class Chick extends Animal {     
     private String myType, mySound;
     public Chick(String type, String sound) {
-      myType = "chick";
-      mySound = "cluck!";
+      super("chick","cluck");
+      this.otherSound = "pee";
     }
     public String getSound() {
-      return mySound;
-    }
-    public String getType() {
-      return myType;
+     if (Math.random() < 0.5)
+         return super.getSound();
+     else
+         return otherSound;
     }
 }

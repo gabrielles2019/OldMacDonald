@@ -2,7 +2,7 @@ class Chick extends Animal {
     private String myType, mySound;
     public Chick(String type, String sound) {
       super("chick","cluck");
-      this.otherSound = "pee";
+      this.otherSound = "peep";
     }
     public String getSound() {
      if (Math.random() < 0.5)
